@@ -30,6 +30,22 @@ public class UserDaoJDBCImpl extends Util implements UserDao {
         } catch (SQLException e) {
             System.out.println("Problem...");
             e.printStackTrace();
+        } finally {
+            if (connection != null) {
+                try {
+                    connection.close();
+                } catch (SQLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (statement != null) {
+                try {
+                    statement.close();
+                } catch (SQLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
         }
     }
 
@@ -45,6 +61,22 @@ public class UserDaoJDBCImpl extends Util implements UserDao {
         } catch (SQLException e) {
             System.out.println("Problem...");
             e.printStackTrace();
+        } finally {
+            if (connection != null) {
+                try {
+                    connection.close();
+                } catch (SQLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (statement != null) {
+                try {
+                    statement.close();
+                } catch (SQLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
         }
     }
 
@@ -94,6 +126,22 @@ public class UserDaoJDBCImpl extends Util implements UserDao {
         } catch (SQLException e) {
             System.out.println("Problem...");
             e.printStackTrace();
+        } finally {
+            if (connection != null) {
+                try {
+                    connection.close();
+                } catch (SQLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (statement != null) {
+                try {
+                    statement.close();
+                } catch (SQLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
         }
     }
 
@@ -116,8 +164,24 @@ public class UserDaoJDBCImpl extends Util implements UserDao {
         } catch (SQLException e) {
             System.out.println("Problem...");
             e.printStackTrace();
+        } finally {
+            if (connection != null) {
+                try {
+                    connection.close();
+                } catch (SQLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (statement != null) {
+                try {
+                    statement.close();
+                } catch (SQLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
         }
-        for(User user: userList){
+        for (User user : userList) {
             System.out.println(user);
         }
         System.out.println();
@@ -136,6 +200,22 @@ public class UserDaoJDBCImpl extends Util implements UserDao {
         } catch (SQLException e) {
             System.out.println("Problem...");
             e.printStackTrace();
+        } finally {
+            if (connection != null) {
+                try {
+                    connection.close();
+                } catch (SQLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (statement != null) {
+                try {
+                    statement.close();
+                } catch (SQLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
         }
     }
 }
